@@ -1,5 +1,5 @@
 {
-  "name": "wxcodex",
+  "name": "@moleft/wxcodex",
   "version": "0.0.1",
   "description": "A WeChat-to-Codex bridge that lets you receive messages in WeChat and answer them with Codex through a local TUI runtime.",
   "type": "module",

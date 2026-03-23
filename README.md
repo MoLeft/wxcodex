@@ -56,7 +56,7 @@ WXCodex 主要由三部分组成：
 全局安装：
 
 ```bash
-npm install -g wxcodex
+npm install -g @moleft/wxcodex
 ```
 
 如果你当前是在仓库源码下体验，也可以先用本地方式安装：
