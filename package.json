@@ -1,0 +1,62 @@
+{
+  "name": "wxcodex",
+  "version": "0.0.1",
+  "description": "A WeChat-to-Codex bridge that lets you receive messages in WeChat and answer them with Codex through a local TUI runtime.",
+  "type": "module",
+  "license": "MIT",
+  "author": "MoLeft",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoLeft/wxcodex.git"
+  },
+  "homepage": "https://github.com/MoLeft/wxcodex#readme",
+  "bugs": {
+    "url": "https://github.com/MoLeft/wxcodex/issues"
+  },
+  "keywords": [
+    "wechat",
+    "codex",
+    "cli",
+    "agent",
+    "ink",
+    "typescript"
+  ],
+  "files": [
+    "dist/index.js",
+    "dist/config.js",
+    "dist/types.js",
+    "dist/codex",
+    "dist/runtime",
+    "dist/store",
+    "dist/tui",
+    "dist/wechat",
+    "package.json"
+  ],
+  "bin": {
+    "wxcodex": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.tsx",
+    "prepack": "npm run build",
+    "start": "node dist/index.js",
+    "test": "vitest run src/__tests__"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@tencent-weixin/openclaw-weixin": "^1.0.2",
+    "ink": "^6.5.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.2.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
