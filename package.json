@@ -7,11 +7,15 @@
   "author": "MoLeft",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MoLeft/wxcodex.git"
+    "url": "git+https://github.com/MoLeft/wxcodex.git"
   },
   "homepage": "https://github.com/MoLeft/wxcodex#readme",
   "bugs": {
     "url": "https://github.com/MoLeft/wxcodex/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "wechat",
@@ -33,7 +37,7 @@
     "package.json"
   ],
   "bin": {
-    "wxcodex": "./dist/index.js"
+    "wxcodex": "dist/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
